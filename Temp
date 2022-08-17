@@ -1,0 +1,11 @@
+target_temperature = temp users set manually (75)
+
+current_temperature = sensor reads temp (65)
+
+if thermostat on
+    every 5 minutes get current_temperature
+        if current_temperature < target_temperature
+            turn on the heater
+
+        if current_temperature => target_temperature
+            turn off the heater 
